@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>IOT Environment</title>
+    <script src="/include.js"></script>
+</head>
+<body id="grad1">
+<!-- Nav Bar -->
+    <div w3-include-html="/nav.html"></div>
+
+<!-- Brief Write Up of the Project-->
+<div align="center">
+    <H1 align="center"><u>PowerCal</u></H1>
+    <div style="padding-left:10%; padding-right: 10%;">
+        <p style="font-size: 20px; text-align: justify;"> 
+        PowerCal was a school project to teach us how to create a secure Smart Home system. We used emulated raspberry pi modules to recreate the IOT device, 
+        MQTT to broadcast to database and Python server to run the Website to display the data retreived. 
+        When changes are made to the devices, a message notification will be sent to the users telegram chat. 
+        The telegram chat is act as a way to receive a notification from the system in replacement of an actual app, with no doubt a self relying system is best for such cases.
+        But due to time constrains, telegram bot was our only options.
+        </p>
+    </div>
+    <br>
+    <i class="fa fa-github" style="font-size:36px" ></i> <a style="color: black;"href="https://github.com/S3rade/PowerCal" target="_blank"> GitHub Repo Here &rarr; </a>
+</div>
+<br>
+
+<!--PDF Viewer Here-->
+<div id="pdf">
+    <object width="100%" type="application/pdf" data="Project.pdf#toolbar=0" id="pdf_content" style="min-height:100vh;pointer-events: none;">
+        <p>If you are unable to view this pdf, do reach out to me on Email or LinkedIn.</p>
+    </object>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p style="font-size: 25px;"><span>&copy;</span> Copyright 2022. All Right Reserved.</p>
+    <p style="font-size: 15px;">Created by s3rade (Zachary Phoon).</p>
+</footer>
+
+<script>
+    /*-- Call Nav Bar */
+    includeHTML();
+</script>
+
+</body>
+</html>
