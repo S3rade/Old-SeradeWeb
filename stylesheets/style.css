@@ -1,0 +1,321 @@
+/* UTILITIES */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    html{
+        height: 100%;
+    }
+    body {
+        min-height:100%;
+        font-family: Futura,Trebuchet MS,Arial,sans-serif;
+        display: flex;
+        flex-direction: column;
+        vertical-align: middle;
+        
+    } 
+    a {
+        text-decoration: none;
+        color:navy;
+    }
+    li {
+        list-style: none;
+    }
+    
+    /*Footer*/
+    footer {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #FAB598;
+        color: black;
+        text-align: center;
+        margin-top: auto;
+        
+    }
+
+/*Gradient Background */
+    #grad1{
+        background-color: #FFFCF7 ;
+        background-image: linear-gradient( to bottom right, #C5D0EB,#D0E1F5, #E8FFFD,#FFFCF7,#FFECE3,#F5CBCB);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+/* NAVBAR Section */
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #FAB598;
+        color: black;
+    }
+   .nav-links a {
+        color: black;
+    }
+    /* LOGO */
+   .logo {
+        font-size: 32px;
+    }
+    /* NAVBAR MENU */
+   .menu {
+        display: flex;
+        gap: 1em;
+        font-size: 20px;
+   }
+   .menu li:hover {
+        background-color: #BC8872;
+        border-radius: 5px;
+        transition: 0.3s ease;
+   }
+   .menu li {
+        padding: 5px 14px;
+   }
+   /* DROPDOWN MENU */
+   .projects {
+        position: relative; 
+   }
+   .dropdown {
+        background-color: #FAB598;
+        padding: 1em 0;
+        position: absolute; /*WITH RESPECT TO PARENT*/
+        display: none;
+        border-radius: 8px;
+        top: 35px;
+   }
+   .dropdown li + li {
+        margin-top: 10px;
+   }
+   .dropdown li {
+        padding: 0.5em 1em;
+        width: 8em;
+        text-align: center;
+   }
+   .dropdown li:hover {
+        background-color: #BC8872;
+   }
+   .projects:hover .dropdown {
+        display: block;
+   }
+
+
+
+/* column Section  */
+    .col-container {
+        display: table;
+        width: 100%;
+    }
+
+    .col1 {
+        display: table-cell;
+        padding: 10px;
+        width: 33.33%;
+        border: 3px solid black;
+    }
+
+    .col2 {
+        display: table-cell;
+        padding: 10px;
+        width: 50%;
+        border: 3px solid black;
+    }
+
+    .col3 {
+        display: table-cell;
+        padding: 10px;
+        width: 25%;
+        border: 3px solid black;
+    }
+
+    .col4 {
+        display: table-cell;
+        padding: 10px;
+        width: 100%;
+        border-top: 3px solid black ;
+        border-bottom: 3px solid black ;
+    }
+
+    .col5 {
+        display: table-cell;
+        padding: 10px;
+        width: 70%;
+        border: 3px solid black;
+    }
+
+    .col6 {
+        display: table-cell;
+        padding: 10px;
+        width: 30%;
+        border: 3px solid black;
+    }
+    .col7 {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 3rem;
+    }
+    .col8 {
+        display: table-cell;
+        padding: 10px;
+        width: 50%;
+    }
+
+/* Slide show Section */
+    .slideshow-container {
+        position: relative;
+        background: #FCDACB;
+    }
+
+    .mySlides {
+        display: none;
+        padding: 90px;
+        text-align: center;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -30px;
+        padding: 16px;
+        color: #888;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+        position: absolute;
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+    }
+
+    /* Add an italic font style to all quotes */
+    q {
+        font-style: italic;
+        font-size: 25px; 
+    }
+  
+    /* Add a blue color to the author */
+    .periods {
+        color: cornflowerblue;
+        font-size: 20px;
+    }
+
+    .wordinslideshow{
+        font-size: 20px;
+    }
+
+/* About me page headline Section */
+    .Headlines{
+        border-bottom: 3px solid black;
+    }
+
+    .Headlines2{
+        border-bottom: 3px solid white;
+    }
+
+    .margine {
+        padding-left: 150px;
+        padding-right: 150px;
+        margin: 3rem;
+    }
+
+    .idkwhatelsetoput{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+/*Card Columns */
+    /* Float four columns side by side */
+    .column {
+        padding-left: 20px;
+        float: left;
+        width: 25%;
+        padding: 10px 10px;
+    
+    }
+    
+    /* Remove extra left and right margins, due to padding */
+    .row {
+        padding-left:10px; 
+        padding-right: 10px;
+        
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+        .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        }
+    }
+    
+    /* Style the counter cards */
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        text-align: center;
+        background-color: #f1f1f1;
+        align-items: center;
+    }
+
+/*Serbird Game*/  
+    #game{
+        width: 400px;
+        height: 500px;
+        border: 1px solid black;
+        margin: auto;
+        overflow: hidden;
+    }
+    #block{
+        width: 50px;
+        height: 500px;
+        background-color: black;
+        position: relative;
+        left: 400px;
+        animation: block 2s infinite linear;
+    }
+    @keyframes block{
+        0%{left:400px}
+        100%{left:-50px}
+    }
+    #hole{
+        width: 50px;
+        height: 150px;
+        background-color: white;
+        position: relative;
+        left: 400px;
+        top: -500px;
+        animation: block 2s infinite linear;
+    }
+    #character{
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        position: absolute;
+        top: 100px;
+        border-radius: 50%;
+    }
+
